@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The Conference Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <svg viewBox="0 0 19 32" class="loader">
+        <path d="M15.947 10.080v-6.347h2.72v-1.067h-18.667v1.067h2.667v6.347c0 1.76 0.693 3.893 5.387 6.187-4 1.92-5.387 3.627-5.387 6.453v5.547h-2.667v1.067h18.667v-1.067h-2.72v-5.547c0-2.827-1.387-4.533-5.387-6.507 4.693-2.24 5.387-4.373 5.387-6.133zM14.88 22.72v5.547h-11.147v-5.547c0-2.24 0.907-3.787 5.6-5.92 4.64 2.187 5.547 3.733 5.547 5.92zM9.28 15.68c-4.907-2.24-5.547-4.107-5.547-5.6v-6.347h11.147v6.347c0 1.493-0.693 3.36-5.6 5.6z"></path>
+      </svg>
+    </div>
+    <section id="top" class="section">
+      <nav class="navbar navbar-fixed-top nav-bg">
+        <div class="container-fluid">
+          <ul class="nav nav-pills pull-right conference-navigation">
+            <li role="presentation"><a href="#peslider">pe-Slider</a></li>
+            <li role="presentation"><a href="#penavscroll">pe-Navscroll</a></li>
+            <li role="presentation"><a href="#pescrollchange">pe-ScrollChange</a></li>
+            <li role="presentation"><a href="#pebg">pe-BG</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button type="button" role="button" aria-label="Toggle Navigation" class="nav-btn"><span class="lines"></span></button>
+      <div class="container">
+        <div class="row hero-unit text-center">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="conference-main-title text-truncate mt5">Plugins</h1>
+            <hr>
+            <p class="fz-14 mb3">The Conference uses five custom standalone javascript plugins created by Pixeden. Those plugins are for the moment designed to work only with this template. There is no warranty in using them as standalone in different projects. Those plugins are:</p><a href="#peslider" class="mr1 mt1 btn btn-xs">pe-slider</a><a href="#penavscroll" class="mr1 mt1 btn btn-xs">pe-navscroll</a><a href="#pescrollchange" class="mr1 mt1 btn btn-xs">pe-scrollchange</a><a href="#pebg" class="mr1 mt1 btn btn-xs">pe-bg</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="peslider" class="section section-dark">
+      <div class="container">
+        <div class="row fz-14">
+          <div class="col-md-12"> 
+            <h2 class="text-center conference-main-title text-truncate mb2">Pe Slider</h2>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div id="example-slider" class="pe-slider">
+                  <ul class="pe-slides">
+                    <li id="s1" class="slide-1"><img src="assets/img/slideshow_1.jpg" class="full-slide"></li>
+                    <li id="s2" class="slide-2"><img src="assets/img/slideshow_2.jpg" class="full-slide"></li>
+                    <li id="s3" class="slide-3"><img src="assets/img/slideshow_3.jpg" class="full-slide"></li>
+                  </ul>
+                  <ul class="pe-slider-nav">
+                    <li><a href="#0" class="pe-slider-prev"></a></li>
+                    <li><a href="#0" class="pe-slider-next"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="mt2">Include the plugin file:
+              <pre class="language-markup"><code>&lt;script src=&quot;pe-slider.min.js&quot;&gt;</code></pre>
+            </p>
+            <p class="mt2">To create a slider use a markup with this structure:
+              <pre class="language-markup"><code>&lt;!-- A wrapper that can be targeted during the init() --&gt;
+&lt;div id=&quot;demo-slider&quot;&gt;
+  &lt;!-- The Slides are inside an unordered list &lt;ul&gt; with each slide a list item &lt;li&gt;. No limit in the number of slides and content can be an &lt;img&gt;, &lt;video&gt; or any HTML content --&gt;
+  &lt;ul class=&quot;pe-slides&quot;&gt;
+   &lt;li class=&quot;selected&quot;&gt;
+     &lt;img class=&quot;full-slide&quot; src=&quot;first-slide.jpg&quot; /&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;img class=&quot;full-slide&quot; src=&quot;second-slide.jpg&quot; /&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;img class=&quot;full-slide&quot; src=&quot;third-slide.jpg&quot; /&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;!-- You can add a navigation (Edit with CSS if needed) --&gt;
+ &lt;ul class=&quot;pe-slider-nav&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;#0&quot; class=&quot;pe-slider-prev&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#0&quot; class=&quot;pe-slider-next&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;&lt;!-- /.pe-slider-nav --&gt;
+&lt;/div&gt;&lt;!-- /.pe-slider-wrapper --&gt;</code></pre>
+            </p>
+            <p class="mt2">Then initialize and/or customize it:
+              <pre class="language-javascript"><code>// Initialize the slider
+var mySlider = new peSlider();
+mySlider.init();
+// Or, in case you want to manipulate some options...
+mySlider.init({
+ slider: '#my-slider', 
+ navigation: false,
+ pagination: true,
+ auto: true,
+ delay: 5000,
+ hoverPause: true
+});</code></pre>
+            </p>
+            <h3 class="text-thin text-uppercase mb2 mt3">Options</h3>
+            <p class="lh-1-5 mb3"><span class="h-book">slider</span> is the selector for the slider. <br> It could be a css selector like <code>'#my-slider'</code> or an Element Object like <code>document.getElementById('my-slider')</code> depending on your needs. <br><span class="text-uppercase">Default: </span><code>'.pe-slider'</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">navigation</span> show/hide the arrows. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>true</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">pagination</span> show/hide the pagination dots. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>true</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">auto</span> autoplay slides. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">delay</span> is the time between slides when <code>auto</code> is enabled. <br> It should be a Number like <code>3000</code><br><span class="text-uppercase">Default: </span><code>5000</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">hoverPause</span> allows to stop the autoplay when the mouse is hovering the slider and resume when the mouse is outside. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">hoverNav</span> only shows the navigation arrows when the mouse is hovering the slider container. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">infinite</span> allows the navigation to loop the slides. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>true</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">carousel</span> changes the behavior from slider to carousel.<br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">overflow</span> shows the content outside the slider container. Best with carousel <code>carousel</code> active.<br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">swipe</span> adds the ability to control the slider by dragging/swiping it. <br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">touch</span> enables the swipe function only for mobile touch devices<br> It should be a Boolean like <code>true</code> or <code>false</code><br><span class="text-uppercase">Default: </span><code>true</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">beforeChange</span> is a <code>function</code> fired just before each slider changes.<br> It should be a Function like <code>function(){ alert('just before change!') }</code> or <code>function(){ mySlider.classList.add('changing') }</code><br><span class="text-uppercase">Default: </span><code>null</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">afterChange</span> is a <code>function</code> fired just after each slider changes.<br> It should be a Function like <code>function(){ alert('just after change!') }</code> or <code>function(){ mySlider.classList.remove('changing') }</code><br><span class="text-uppercase">Default: </span><code>null</code></p>
+            <h3 class="text-thin text-uppercase mb2 mt3">Functions</h3>
+            <p class="lh-1-5 mb0"><span class="h-book">activeSlide()</span> is a function that returns the active slide when it is called.<br> Could return the number of the node element of the DOM.</p>
+            <pre class="language-javascript"><code class="language-javascript">// will return the number of the active slide, zero based.
+mySlider.activeSlide().number /* for example 2 */ &#13;&#13;
+// will return the DOM element of the active slide
+mySlider.activeSlide().elem /* for example &lt;li id=&quot;s2&quot; class=&quot;slide-2 selected&quot;&gt;...&lt;/li&gt; */</code></pre>
+            <p class="lh-1-5 mb0 mt3"><span class="h-book">totalSlides()</span> is a function that returns the total number of slides.</p>
+            <pre class="language-javascript"><code class="language-javascript">mySlider.totalSlides() /* for example 3 */</code></pre>
+            <p class="lh-1-5 mb0 mt3"><span class="h-book">nextSlide()</span> and <span class="h-book">prevSlide()</span> are functions that trigger the slider to move to the next/previous slide. It allows you to fire those actions from other DOM elements.</p>
+            <pre class="language-javascript"><code class="language-javascript">$('#myButton').click(function(){
+  mySlider.nextSlide();
+})</code></pre>
+            <pre class="language-markup"><code class="language-markup">&lt;button onclick=&quot;mySlider.prevSlide()&quot;&gt;Next slide&lt;/buttton&gt;</code></pre>
+            <p class="lh-1-5 mb0 mt3"><span class="h-book">getSlider()</span> is a function that could return the <code>slider</code> element, the <code>wrapper</code> element and the <code>slides</code> NodeList. </p>
+            <pre class="language-javascript"><code class="language-javascript">var sliderStuff = mySlider.getSlider(); /* here is the Object */
+var wrapper = sliderStuff.wrapper;
+var slider = sliderStuff.slider;
+var slides = sliderStuff.slides;&#13;&#13;
+// Examples
+wrapper.style.height = '340px'; /* set the height of the wrapper */
+slider.addEventListener('click', myFunction); /* add an event when the slider is clicked */
+console.log(slides[0].id) /* get the ID of the first slide */</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-3 text-center">
+            <div id="demo-slider" class="pe-slider">
+              <ul class="pe-slides">
+                <li class="section section-terracotta">
+                  <h1>hola</h1>
+                </li>
+                <li class="section section-casper">
+                  <h1>Ciao                </h1>
+                </li>
+                <li class="section section-gothic">
+                  <h1>Howdy</h1>
+                </li>
+              </ul>
+              <ul class="pe-slider-nav">
+                <li><a href="#0" class="pe-slider-prev"></a></li>
+                <li><a href="#0" class="pe-slider-next"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9 fz-16">
+            <p>The slider adapts automatically to the height of the content. You can control it by changing the <code>.pe-slider li</code> element style CSS attribute.</p>
+            <p>In the case of <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code> content you can add the class <code>full-slide</code> to adjust the height to cover the full width of the container.</p>
+            <p class="h-book mt2">You can also change the slider transition effect. Adding the class<br><code>pe-slider__scale</code> or <code>pe-slider__flip</code> to the <code>&lt;ul class="pe-slider"&gt;...&lt;/ul&gt;</code></p>
+            <p>Try it:
+              <select id="modif-slider-effect">
+                <option value="">Default</option>
+                <option value="pe-slider__scale" class="selected">Scale</option>
+                <option value="pe-slider__flip">Flip</option>
+              </select>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="penavscroll" class="section section-dark-grey">
+      <div class="container">
+        <div class="row fz-14">
+          <div class="col-md-12"> 
+            <h2 class="text-center conference-main-title text-truncate mb4">Pe Navigation Scroll</h2>
+            <p class="mt2">We use this plugin for the main navigation in all of the Ebook pages.<br>It animates a page scroll to the various navigation links anchors and adds a class to the current link according to the scroll position.</p>
+            <p class="mt2">Include the plugin file: </p>
+            <pre class="language-markup"><code>&lt;script src=&quot;pe-navscroll.min.js&quot;&gt;</code></pre>
+            <p class="mt2">Use a markup like this:</p>
+            <pre class="language-markup"><code>&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;ul class=&quot;nav nav-pills&quot;&gt;
+   &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#section-one&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#section-two&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#section-three&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;&lt;!-- /.navbar --&gt;</code></pre>
+            <p class="mt2">Then initialize and/or customize it:</p>
+            <pre class="language-javascript"><code>// Initialize the default navScroll
+peNavScroll.init();
+// Or, in case you want to manipulate some options...
+peNavScroll.init({
+  nav:'.navbar',
+  class:'active',
+  duration: 500,
+  hashChange: false,
+  offset: 40,
+  allLinks: true, // Allows the page scroll animation to be triggered from anchor links outside the navigation "nav" element
+  easingFunction: easing.easeInOutCubic // the easing function
+});</code></pre>
+            <h3 class="text-thin text-uppercase mb2 mt3">Options</h3>
+            <p class="lh-1-5 mb3"><span class="h-book">nav</span> is the selector for the navigation. <br> It should be a css selector like <code>'#navigation'</code> or <code>ul.main-navigation</code>. <br><span class="text-uppercase">Default: </span><code>'.navbar'</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">class</span> is the class to add to the navigation item, when the scroll position corresponds to the item entering the viewport.<br> It should be a String for the class name like <code>'current'</code>. <br><span class="text-uppercase">Default: </span><code>'active'</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">duration</span> is the duration of the animated scroll. <br> It should be a number like <code>500</code>. <br><span class="text-uppercase">Default: </span><code>900</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">hashChange </span> adds the anchor (#hash) of the item clicked at the end of the url.<br> It should be a Boolean like <code>true</code> or <code>false</code>. <br><span class="text-uppercase">Default: </span><code>true</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">offset</span> modifies when the active class is added by a number of pixels to get a finer control on the class change trigger. <br> It should be a number like: <code>60</code> or <code>-40</code>. <br><span class="text-uppercase">Default: </span><code>0</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">allLinks</span> allows the page scroll animation to be triggered from anchor links outside the navigation "nav" element. <br> It should be a Boolean like <code>true</code> or <code>false</code>. <br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">noMenu</span> use in cases when the menu height should not be a factor to calculate the scroll (floating menu: absolute/fixed).<br> It should be a Boolean like <code>true</code> or <code>false</code>. <br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">hideOnScroll</span> adds the class <code>nav-hide</code> when the user scrolls down and <code>nav-show</code> when the user scrolls up and also at the beginning and end of the current page.<br> It should be a Boolean like <code>true</code> or <code>false</code>. <br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">hideFn</span> is an additional function <code>function</code> called when the user scrolls down. Works only when <code>hideOnScroll</code> active.<br> It should be a Function like <code>function(){ $('.nav').hide(); }</code> or <code>function(){ console.log('hide!') }</code>. <br><span class="text-uppercase">Default: </span><code>null</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">showFn</span> is an aditional <code>function</code> called when the user scrolls up. Works only when <code>hideOnScroll</code> active.<br> It should be a Function like <code>function(){ $('.nav').show(); }</code> or <code>function(){ console.log('show!') }</code>. <br><span class="text-uppercase">Default: </span><code>null</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">easingFunction</span> is the easing function for the animated scroll. <br> It should be a function like <code>easing.easeInOutCubic</code>. <br><span class="text-uppercase">Default: </span><code>easing.linear</code></p>
+            <p>Available easing functions: <code>easing.linear</code>, <code>easing.easeInQuad</code>, <code>easing.easeOutQuad</code>, <code>easing.easeInOutQuad</code>, <code>easing.easeInCubic</code>, <code>easing.easeOutCubic</code>, <code>easing.easeInOutCubic</code>, <code>easing.easeInQuart</code>, <code>easing.easeOutQuart</code>, <code>easing.easeInOutQuart</code>, <code>easing.easeInQuint</code>, <code>easing.easeOutQuint</code>, <code>easing.easeInOutQuint</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pescrollchange" class="section">
+      <div class="container">
+        <div class="row fz-14">
+          <div class="col-md-12"> 
+            <h2 class="text-center conference-main-title text-truncate mb4">Pe Scroll Change</h2>
+            <p class="mt2">This plugin lets you add or remove a CSS class from a DOM element when a user scrolls the document.</p>
+            <p class="mt2">Include the plugin file: </p>
+            <pre class="language-markup"><code>&lt;script src=&quot;pe-scrollchange.min.js&quot;&gt;</code></pre>
+            <p class="mt2">Then initialize it and/or customize it: </p>
+            <pre class="language-javascript"><code>// Initialize the default scrollChange
+peScrollChange.init();
+// Or, in case you want to manipulate some options...
+peScrollChange.init({
+  elem: '.navigation',
+  trigger: '#trigger',
+  classesToChange: 'fixed',
+  offset: 0,
+  removeClass: false,
+  endPoint:triggerH
+})</code></pre>
+            <h3 class="text-thin text-uppercase mb2 mt3">Options</h3>
+            <p class="lh-1-5 mb3"><span class="h-book">elem</span> is the element to control. <br> It could be a css selector like <code>'#navigation'</code> or an Element Object like <code>document.getElementById('navigation')</code> depending on your needs. <br><span class="text-uppercase">Default: </span><code>'.navbar'</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">trigger</span> is the point where the action (change of the class) will occur. <br> It could be a css selector like <code>'#trigger'</code>, an Element Object like <code>document.getElementById('trigger')</code> or a Number like <code>50</code>. If it is a number, the action will occur after the quantity of pixels specified has been scrolled. If there is a DOM element (through a css selector or an Element Object) instead, the trigger will occur when the page scrolls where the element is on the page Y coordoninate. <br><span class="text-uppercase">Default: </span><code>50</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">classesToChange</span> are the classes to add to or remove from the element. <br> It should be a String with one or more classes separated by a space i.e: <code>'fixed transparent'</code> or <code>fixed-nav</code>. <br><span class="text-uppercase">Default: </span><code>nav-bg</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">offset</span> is the quantity of pixels to sum or rest from the trigger point to finetune when the action occurs. <br> It should be a Number like: <code>100</code> or <code>-40</code>. <br><span class="text-uppercase">Default: </span><code>0</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">removeClass</span> changes the default logic and removes the class or classes instead of adding them when the page scrolls to the trigger point. <br> It should be a Boolaen like: <code>true</code> or <code>false</code>. <br><span class="text-uppercase">Default: </span><code>false</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">endPoint</span> creates an end point for the action. Instead of adding/removing class/es after the trigger point, it allows to add/remove the classs/es between the trigger point and the endPoint. <br> It should be a number like : <code>700</code> or <code>trigger.offsetHeight</code>. <br><span class="text-uppercase">Default: </span><code>0</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pebg" class="section section-dark-grey section-background">
+      <div class="container">
+        <div class="row fz-14">
+          <div class="col-md-12"> 
+            <h2 class="text-center conference-main-title text-truncate mb4">Pe Bg</h2>
+            <p class="mt2">This plugin lets you load dynamically a background image to a html tag such as a section and add extra effects like parallax.</p>
+            <p class="mt2">Include the plugin file: </p>
+            <pre class="language-markup"><code>&lt;script src=&quot;pe-bg.min.js&quot;&gt;</code></pre>
+            <p class="mt2">Then initialize it and/or customize it: </p>
+            <pre class="language-javascript"><code>// Initialize the default Bg
+var myBgs = new peBg();
+myBgs.init();
+// Or, in case you want to manipulate some options...
+myBgs.init({
+  elems: '.section-background',
+  bgSrc: 'assets/img/bg_1.jpg',
+  bgColor: '#e04863',
+  blend: 'multiply',
+  bgOpacity: .3,
+  parallax: true,
+  factor: 0.55,
+  extraHeight: 'x2'
+})</code></pre>
+            <h3 class="text-thin text-uppercase mb2 mt3">Options</h3>
+            <p class="lh-1-5 mb3"><span class="h-book">elems</span> are the elements that will have the ability to load a Background. <br> It could be a css selector like <code class="fz-12">'.section-background'</code> or an Array with specific css selectors like <code class="fz-12">['.my-section', '#bg-1', '.another-bg']</code> depending on your needs. <br><span class="text-uppercase">Default: </span><code class="fz-12">'.section-background'</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">bgSrc</span> is the url for the background image.<br> It should be a String url like <code class="fz-12">'img/my-bg.jpg'</code><br><span class="text-uppercase">Default: </span><code class="fz-12">''</code><br><i class="pe-mi-config-2"> You could also control this option adding for example <code>data-bg-src='img/my-bg.jpg'</code> to the DOM element</i></p>
+            <p class="lh-1-5 mb3"><span class="h-book">bgColor</span> is the color of the background overlay. <br> It should be an html color like <code class="fz-12">'#e04863'</code>  or <code class="fz-12">'white'</code>  or <code class="fz-12">'rgba(25,67,34,.5)'</code><br><span class="text-uppercase">Default: </span><code class="fz-12">''</code><br><i class="pe-mi-config-2"> You could also control this option adding for example <code>data-bg-color='#e04863'</code> to the DOM element</i></p>
+            <p class="lh-1-5 mb3"><span class="h-book">blend</span> is the blend mode to use to mix the background overlay color with the picture. <br> It should be a String of one of the <code>background-blend-mode</code>'s like: <code class="fz-12">'multiply'</code>, <code class="fz-12">'screen'</code>, <code class="fz-12">'overlay'</code>, <code class="fz-12">'darken'</code>, <code class="fz-12">'lighten'</code>, <code class="fz-12">'color-dodge'</code>, <code class="fz-12">'color-burn'</code>, <code class="fz-12">'hard-light'</code>, <code class="fz-12">'soft-light'</code>, <code class="fz-12">'difference'</code>, <code class="fz-12">'exclusion'</code>, <code class="fz-12">'hue'</code>, <code class="fz-12">'saturation'</code>, <code class="fz-12">'color'</code> or<code class="fz-12">'luminosity'</code><br><span class="text-uppercase">Default: </span><code class="fz-12">'normal'</code><br><i class="pe-mi-config-2"> You could also control this option adding for example <code>data-bg-blend="multiply"</code> to the DOM element</i></p>
+            <p class="lh-1-5 mb3"><span class="h-book">parallax</span> moves the background relatively to the page scroll movements. <br> It should be a Boolean like <code class="fz-12">true</code>  or <code class="fz-12">false</code><br><span class="text-uppercase">Default: </span><code class="fz-12">false</code><br><i class="pe-mi-config-2"> You could also control this option adding the class <code>pe-parallax</code> to the DOM element</i></p>
+            <p class="lh-1-5 mb3"><span class="h-book">factor</span> is the 'magic number' to control the intensity of the parallax.<br> It should be a float Number between 0 and 1 like <code class="fz-12">0.5</code>  or <code class="fz-12">0.76</code><br><span class="text-uppercase">Default: </span><code class="fz-12">0.55</code><br><span class="text-medium text-uppercase">only works with </span><code>parallax="true"</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">bgOpacity</span> controls the opacity of the parallax background. <br> It should be a float Number between 0 and 1 like <code class="fz-12">0.3</code>  or <code class="fz-12">.85</code><br><span class="text-uppercase">Default: </span><code class="fz-12">1</code><br><i class="pe-mi-config-2"> You could also control this option adding for example <code>data-bg-opacity='0.3'</code> to the DOM element</i><br><span class="text-medium text-uppercase">only works with </span><code>parallax="true"</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">mobile</span> enable/disable the parallax behavior for mobile devices.<br> It should be a Boolean like <code class="fz-12">true</code>  or <code class="fz-12">false</code><br><span class="text-uppercase">Default: </span><code class="fz-12">true</code><br><span class="text-medium text-uppercase">only works with </span><code>parallax="true"</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">extraHeight</span> multiplies the height of the parallax image x times (useful for large sections).<br> It should be a String like <code class="fz-12">'x2'</code>  or <code class="fz-12">'x3'</code>  or <code class="fz-12">'x4'</code><br><span class="text-uppercase">Default: </span><code class="fz-12">false</code><br><i class="pe-mi-config-2"> You could also control this option adding the classes <code>x2</code>, <code>x3</code> or <code>x4</code> to the DOM element</i><br><span class="text-medium text-uppercase">only works with </span><code>parallax="true"</code></p>
+            <p class="lh-1-5 mb3"><span class="h-book">fixed</span> the background will remain attached when the page scrolls.<br> It should be a Boolean like <code class="fz-12">true</code>  or <code class="fz-12">false</code><br><span class="text-uppercase">Default: </span><code class="fz-12">false</code><br><i class="pe-mi-config-2"> You could also control this option adding the class <code>pe-fixed</code> to the DOM element</i><br><span class="text-medium text-uppercase">only works with </span><code>parallax="false"</code><br>Fixed background option has been <span style="text-decoration: underline;">disabled by default on mobile browsers </span>because of important performance issues.</p>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div id="bg-test" class="col-md-12 p3">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="text-uppercase text-light mt4 mb4 text-truncate">Test it!</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <p class="text-uppercase text-thin mb0">Image Source</p>
+                <select id="img-src" class="color-dark">
+                  <option disabled>Image source</option>
+                  <option value="assets/img/slideshow_1.jpg">Image 1</option>
+                  <option value="assets/img/slideshow_2.jpg" selected>Image 2</option>
+                  <option value="assets/img/slideshow_3.jpg">Image 3</option>
+                </select>
+                <p class="text-uppercase text-thin mb0">Blend mode</p>
+                <select id="blend-mode" class="color-dark">
+                  <option disabled>Blend Mode</option>
+                  <option value="normal">normal</option>
+                  <option value="multiply" selected>multiply</option>
+                  <option value="screen">screen</option>
+                  <option value="overlay">overlay</option>
+                  <option value="darken">darken</option>
+                  <option value="lighten">lighten</option>
+                  <option value="color-dodge">color-dodge</option>
+                  <option value="color-burn">color-burn</option>
+                  <option value="hard-light">hard-light</option>
+                  <option value="soft-light">soft-light</option>
+                  <option value="difference">difference</option>
+                  <option value="exclusion">exclusion</option>
+                  <option value="hue">hue</option>
+                  <option value="saturation">saturation</option>
+                  <option value="color">color</option>
+                  <option value="luminosity">luminosity          </option>
+                </select>
+              </div>
+              <div class="col-md-4 text-center">
+                <div id="bgc" class="form-group conference-input">
+                  <input id="bg-color" type="text" placeholder="The background color" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <p class="text-uppercase text-thin mb0">Bg effect</p>
+                <div class="fz-12">
+                  <input type="radio" name="bg-eff" value="parallax" checked id="radio-prlx">
+                  <label for="radio-prlx" class="text-uppercase text-thin"> Parallax</label>&nbsp;
+                  <input type="radio" name="bg-eff" value="fixed" id="radio-fixed">
+                  <label for="radio-fixed" class="text-uppercase text-thin"> Fixed</label>&nbsp;
+                  <input type="radio" name="bg-eff" value="none" id="radio-none">
+                  <label for="radio-none" class="text-uppercase text-thin"> None</label>
+                  <div id="parallax-opts" class="mt2">
+                    <p class="text-uppercase text-thin mb0">Factor<span class="fz-12 text-thin">/ <span id="factor-val">0.55</span></span></p>
+                    <input type="range" min="0" max="100" value="55" id="input-factor">
+                    <p class="text-uppercase text-thin mb0 mt2">Opacity<span class="fz-12 text-thin">/ <span id="op-val">0.1</span></span></p>
+                    <input type="range" min="0" max="100" value="10" id="input-opacity">
+                    <p class="text-uppercase text-thin mb0 mt2">Extra height</p>
+                    <select id="xtra-height" class="color-dark">
+                      <option value="">none</option>
+                      <option value="x2">x2</option>
+                      <option value="x3" selected>x3</option>
+                      <option value="x4">x4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt2">
+              <div class="col-md-12 text-center">
+                <button id="pebg-update" class="btn btn-sm">update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-light"><a href="#top" class="fz-50"><i class="pe-7s-angle-up-circle"></i></a></div>
+        </div>
+      </div>
+    </section>
+    <div class="plugin-loader">
+      <div class="loader color-white text-center">
+        <h1><i class="pe-7s-hourglass"></i></h1>
+      </div>
+    </div>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Livereload Script -- remove on production-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        // Pe Slider
+        var exampleSlider = new peSlider();
+        exampleSlider.init({
+          slider:'#example-slider',
+          pagination: true,
+          navigation: true        
+        });
+      
+        var demoSlider = new peSlider();
+        demoSlider.init({
+          slider:'#demo-slider',
+          pagination: false,
+          navigation: false,
+          auto: true,
+          delay: 4000,
+          touch: true
+        });
+      
+        var mSliderEffect = document.getElementById('modif-slider-effect');
+        var demoSlider = document.querySelector('#demo-slider .pe-slides');
+        mSliderEffect.onchange = function(){
+          demoSlider.className = 'pe-slides ' + this.value;
+        }
+      
+        // Pe Background DEMO
+        var pb = new peBg();
+      
+        pb.init({
+          elems: '.section-background',
+          blend: 'multiply',
+          bgColor: '#fff',
+          bgSrc: 'assets/img/slideshow_2.jpg',
+          bgOpacity: .1,
+          parallax: true,
+          mobile: true,
+          extraHeight: 'x3'
+        });
+        
+        var factorValue = document.getElementById('factor-val');
+        var opacityValue = document.getElementById('op-val');
+        var factorInput = document.getElementById('input-factor');
+        var opacityInput = document.getElementById('input-opacity');
+        var extraHeight = document.getElementById('xtra-height');
+        var bgColor = document.getElementById('bg-color');
+        var bgc = document.getElementById('bgc');
+        
+        factorInput.addEventListener('input', function(){
+          factorValue.innerHTML = factorInput.value / 100;
+        })
+        opacityInput.addEventListener('input', function(){
+          opacityValue.innerHTML = opacityInput.value / 100;
+        })
+      
+        bgColor.addEventListener('keyup', function(){
+          if(!testColor(bgColor.value)){
+            bgc.style.color = '#e04863';
+          } else {
+            bgc.style.color = 'white';
+          }
+        })
+      
+        function updatePeBg(){
+          var bgTest = document.querySelector('.plugin-loader');
+          bgTest.classList.add('loading');
+          document.body.classList.add('oh');
+          pb.reset();
+          var imgSrc = document.getElementById('img-src');
+          var blendMode  = document.getElementById('blend-mode');
+          
+          var bgEff = getRadioVal('bg-eff');
+      
+          pb.init({
+            elems: '.section-background',
+            blend: blendMode.value,
+            bgColor: testColor(bgColor.value) ? bgColor.value : '#fff',
+            bgSrc: imgSrc.value,
+            bgOpacity: opacityInput.value/100,
+            parallax: bgEff == 'parallax' ? true : false,
+            fixed: bgEff == 'fixed' ? true : false,
+            factor: factorInput.value/100,
+            mobile: true,
+            extraHeight: extraHeight.value
+          }, function(){
+            bgTest.classList.remove('loading');
+            document.body.classList.remove('oh');
+          });
+        }
+      
+        document.getElementById('pebg-update').addEventListener('click', updatePeBg, false)
+      
+      
+      
+      
+       peNavScroll.init({
+         nav:'.navbar',
+         class:'active',
+         duration: 500,
+         allLinks: true,
+         easingFunction: easing.easeInOutCubic
+       });
+      
+      
+        // Mobile Navigation
+        $('.nav-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.navbar').toggleClass('navbar--open');
+        })
+        
+        // Select code
+        var pres = document.querySelectorAll('pre');
+        [].slice.call(pres).forEach(function(elem, index){
+          pres[index].addEventListener('click', function(){
+            SelectText(this)
+          })
+        })
+      
+      
+      
+      }) // Ready
+      
+      
+      
+      
+          
+    </script>
+  </body>
+</html>

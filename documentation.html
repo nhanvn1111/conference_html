@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The Conference Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <svg viewBox="0 0 19 32" class="loader">
+        <path d="M15.947 10.080v-6.347h2.72v-1.067h-18.667v1.067h2.667v6.347c0 1.76 0.693 3.893 5.387 6.187-4 1.92-5.387 3.627-5.387 6.453v5.547h-2.667v1.067h18.667v-1.067h-2.72v-5.547c0-2.827-1.387-4.533-5.387-6.507 4.693-2.24 5.387-4.373 5.387-6.133zM14.88 22.72v5.547h-11.147v-5.547c0-2.24 0.907-3.787 5.6-5.92 4.64 2.187 5.547 3.733 5.547 5.92zM9.28 15.68c-4.907-2.24-5.547-4.107-5.547-5.6v-6.347h11.147v6.347c0 1.493-0.693 3.36-5.6 5.6z"></path>
+      </svg>
+    </div>
+    <nav class="navbar navbar-fixed-top nav-bg">
+      <div class="container-fluid">
+        <ul class="nav nav-pills pull-right conference-navigation">
+          <li role="presentation" class="active"><a href="#type">Type</a></li>
+          <li role="presentation"><a href="#buttons">Buttons</a></li>
+          <li role="presentation"><a href="#checkers">Checkers</a></li>
+          <li role="presentation"><a href="#timeline">Timeline</a></li>
+          <li role="presentation"><a href="#forms">Forms</a></li>
+          <li role="presentation"><a href="#helpers">Helpers</a></li>
+          <li role="presentation"><a href="#icons">Icons</a></li>
+        </ul>
+      </div>
+    </nav>
+    <button type="button" role="button" aria-label="Toggle Navigation" class="nav-btn"><span class="lines"></span></button>
+    <section id="top" class="section">
+      <div class="container">
+        <div class="row hero-unit text-center">
+          <div class="col-md-12">
+            <h1 class="conference-main-title text-truncate mt5">Documentation</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="type" class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Typography</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;h1&gt;h1 Heading&lt;/h1&gt; <code>&#13;&#13;</code>&lt;h2&gt;h2 Heading&lt;/h2&gt; <code>&#13;&#13;</code>&lt;h3&gt;h3 Heading&lt;/h3&gt; <code>&#13;&#13;</code>&lt;h4&gt;h4 Heading&lt;/h4&gt; <code>&#13;&#13;</code>&lt;h5&gt;h5 Heading&lt;/h5&gt; </code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="h-black">h1 Black          </h1>
+            <h2 class="h-black">h2 Black          </h2>
+            <h3 class="h-black">h3 Black          </h3>
+            <h4 class="h-black">h4 Black          </h4>
+            <h5 class="h-black">h5 Black</h5>
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;h1 clas=&quot;h-black&quot;&gt;h1 Black&lt;/h1&gt;<code>&#13;&#13;</code>&lt;h2 clas=&quot;h-black&quot;&gt;h2 Black&lt;/h2&gt;<code>&#13;&#13;</code>&lt;h3 clas=&quot;h-black&quot;&gt;h3 Black&lt;/h3&gt;<code>&#13;&#13;</code>&lt;h4 clas=&quot;h-black&quot;&gt;h4 Black&lt;/h4&gt;<code>&#13;&#13;</code>&lt;h5 clas=&quot;h-black&quot;&gt;h5 Black&lt;/h5&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="h-book">h1 Book</h1>
+            <h2 class="h-book">h2 Book</h2>
+            <h3 class="h-book">h3 Book</h3>
+            <h4 class="h-book">h4 Book</h4>
+            <h5 class="h-book">h5 Book</h5>
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;h1 clas=&quot;h-book&quot;&gt;h1 Book&lt;/h1&gt;<code>&#13;&#13;</code>&lt;h2 clas=&quot;h-book&quot;&gt;h2 Book&lt;/h2&gt;<code>&#13;&#13;</code>&lt;h3 clas=&quot;h-book&quot;&gt;h3 Book&lt;/h3&gt;<code>&#13;&#13;</code>&lt;h4 clas=&quot;h-book&quot;&gt;h4 Book&lt;/h4&gt;<code>&#13;&#13;</code>&lt;h5 clas=&quot;h-book&quot;&gt;h5 Book&lt;/h5&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6 fz-14">
+            <h3 class="text-uppercase text-black">Helpers</h3>
+            <p><span class="text-medium">Text truncate </span>adding the class <code>text-truncate</code></p>
+            <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque ad velit inventore, eius debitis, dicta exercitationem nobis, harum culpa vel doloremque. Corporis voluptate quo, voluptates expedita voluptas.</p>
+            <p><span class="text-medium">TEXT UPPERCASE </span>adding the class <code>text-uppercase</code></p>
+            <p><span class="text-medium">Text normalcase </span>adding the class <code>text-normalcase</code></p>
+            <div id="text-colors">
+              <p><span class="text-bold color-iceberg">Color iceberg </span>adding the class <code>color-iceberg</code></p>
+              <p><span class="text-bold color-casper">Color casper </span>adding the class <code>color-casper</code></p>
+              <p><span class="text-bold color-serenade">Color serenade </span>adding the class <code>color-serenade</code></p>
+              <p><span class="text-bold color-grey">Color grey </span>adding the class <code>color-grey</code></p>
+              <p><span class="text-bold color-dark-grey">Color dark-grey </span>adding the class <code>color-dark-grey</code></p>
+              <p><span class="text-bold color-gothic">Color gothic </span>adding the class <code>color-gothic</code></p>
+              <p><span class="text-bold color-comet">Color comet </span>adding the class <code>color-comet</code></p>
+              <p><span class="text-bold color-terracotta">Color terracotta </span>adding the class <code>color-terracotta</code></p>
+            </div><a href="#0">I'm a simple link</a>
+          </div>
+          <div class="col-md-6 mt4">
+            <pre class="language-markup"><code>&lt;p class=&quot;text-truncate&quot;&gt;Text truncate...&lt;/p&gt; &#13;
+&lt;p class=&quot;text-uppercase&quot;&gt;Text uppecase...&lt;/p&gt; &#13;
+&lt;p class=&quot;text-normalcase&quot;&gt;Text normalcase...&lt;/p&gt; &#13;&#13;</code><code>&lt;p class=&quot;color-iceberg&quot;&gt;Color iceberg&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-casper&quot;&gt;Color casper&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-serenade&quot;&gt;Color serenade&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-grey&quot;&gt;Color grey&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-dark-grey&quot;&gt;Color dark-grey&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-gothic&quot;&gt;Color gothic&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-comet&quot;&gt;Color comet&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-terracotta&quot;&gt;Color terracotta&lt;/p&gt; &#13;</code><code>&#13;&#13;&lt;a href=&quot;#&quot;&gt;I'm a simple link.&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="buttons" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Buttons </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <button class="btn btn-xs">btn-xs</button>
+            <button class="btn btn-sm">btn-sm</button>
+            <button class="btn">btn</button>
+            <button class="btn btn-lg">btn-lg</button>
+            <button class="btn btn-sm mt1 btn-block">btn-block</button>
+            <hr>
+            <button class="btn btn-xs mt1 btn-primary">btn-primary </button>
+            <button class="btn btn-xs mt1 btn-success">btn-success </button>
+            <button class="btn btn-xs mt1 btn-info">btn-info </button>
+            <button class="btn btn-xs mt1 btn-warning">btn-warning </button>
+            <button class="btn btn-xs mt1 btn-danger">btn-danger </button>
+            <hr>
+            <button class="btn btn-xs mt1 btn-iceberg">btn-iceberg </button>
+            <button class="btn btn-xs mt1 btn-casper">btn-casper </button>
+            <button class="btn btn-xs mt1 btn-serenade">btn-serenade </button>
+            <button class="btn btn-xs mt1 btn-grey">btn-grey </button>
+            <button class="btn btn-xs mt1 btn-dark-grey">btn-dark-grey </button>
+            <button class="btn btn-xs mt1 btn-gothic">btn-gothic </button>
+            <button class="btn btn-xs mt1 btn-comet">btn-comet </button>
+            <button class="btn btn-xs mt1 btn-terracotta">btn-terracotta </button>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-xs&quot;&gt;btn-xs&lt;/button&gt;
+&lt;button class=&quot;btn btn-sm&quot;&gt;btn-sm&lt;/button&gt;
+&lt;button class=&quot;btn&quot;&gt;btn&lt;/button&gt;
+&lt;button class=&quot;btn btn-lg&quot;&gt;btn-lg&lt;/button&gt;
+&lt;button class=&quot;btn btn-block&quot;&gt;Button block&lt;/button&gt;&#13;&#13;
+&lt;hr&gt;&#13;&#13;<code>&lt;button class=&quot;btn btn-primary&quot;&gt;btn-primary&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-success&quot;&gt;btn-success&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-info&quot;&gt;btn-info&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-warning&quot;&gt;btn-warning&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-danger&quot;&gt;btn-danger&lt;/button&gt;&#13;</code><code>&#13;&lt;hr&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn btn-iceberg&quot;&gt;btn-iceberg&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-casper&quot;&gt;btn-casper&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-serenade&quot;&gt;btn-serenade&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-grey&quot;&gt;btn-grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-dark-grey&quot;&gt;btn-dark-grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-gothic&quot;&gt;btn-gothic&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-comet&quot;&gt;btn-comet&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-terracotta&quot;&gt;btn-terracotta&lt;/button&gt;&#13;</code></code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase mt4 mb4 text-truncate">Buttons<small class="text-normalcase"> inverse</small></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <button class="btn btn-xs inverse mt1 btn-primary">Inverse Primary</button>
+            <button class="btn btn-xs inverse mt1 btn-success">Inverse Success</button>
+            <button class="btn btn-xs inverse mt1 btn-info">Inverse Info</button>
+            <button class="btn btn-xs inverse mt1 btn-warning">Inverse Warning</button>
+            <button class="btn btn-xs inverse mt1 btn-danger">Inverse Danger</button>
+            <button class="btn btn-xs inverse mt1 btn-iceberg">inverse iceberg </button>
+            <button class="btn btn-xs inverse mt1 btn-casper">inverse casper </button>
+            <button class="btn btn-xs inverse mt1 btn-serenade">inverse serenade </button>
+            <button class="btn btn-xs inverse mt1 btn-grey">inverse grey </button>
+            <button class="btn btn-xs inverse mt1 btn-dark-grey">inverse dark-grey </button>
+            <button class="btn btn-xs inverse mt1 btn-gothic">inverse gothic </button>
+            <button class="btn btn-xs inverse mt1 btn-comet">inverse comet </button>
+            <button class="btn btn-xs inverse mt1 btn-terracotta">inverse terracotta </button>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn inverse btn-primary&quot;&gt;Inverse primary&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-success&quot;&gt;Inverse success&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-info&quot;&gt;Inverse info&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-warning&quot;&gt;Inverse warning&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-danger&quot;&gt;Inverse danger&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-iceberg&quot;&gt;Inverse iceberg&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-casper&quot;&gt;Inverse casper&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-serenade&quot;&gt;Inverse serenade&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-grey&quot;&gt;Inverse grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-dark-grey&quot;&gt;Inverse dark-grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-gothic&quot;&gt;Inverse gothic&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-comet&quot;&gt;Inverse comet&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-terracotta&quot;&gt;Inverse terracotta&lt;/button&gt;&#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="checkers" class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Checkers</h1>
+            <p>The Checkers work as a pair of content.<br>The second item will inherit a <code>background-color</code> on :hover by adding a color class such as chk-colorname to the chk-container.</p>
+            <p>You can create a featured checker with a <code>background-color</code> by adding the class <code>active</code> to the chk-container.</p>
+            <p>The checkers are distributed in equal width for each row.</p>
+            <p>You need one <code>chk-container</code> div for each row and then a new <code>chk-container</code> div for each new pair.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark-grey pt0">
+      <div class="chk-container chk-casper active">
+        <div class="chk-item"><img src="assets/img/speaker_1.jpg" alt="Speaker PETER LONGMAN" class="chk-full"></div>
+        <div class="chk-item text-center">
+          <div class="p3">
+            <h2 class="conference-title">This is an Active checker    </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ex. Ducimus autem hic, vero nemo eius corrupti iusto eos laboriosam possimus ullam ut. Blanditiis, cum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="chk-container">
+        <div class="chk-container chk-casper chk-inverse">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+              <p>with class <code>chk-inverse</code> to place the content on the left side.</p>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-serenade">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+              <p>with class <code>chk-serenade</code> applied to the background color on :hover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chk-container">
+        <div class="chk-container">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-gothic">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-inverse chk-terracotta">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-inverse chk-white active">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <div class="p3">
+              <h3 class="conference-title">Checker</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chk-container">
+        <div class="chk-container active">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-shopbag"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-gothic active">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-tools"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-terracotta active">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-radio"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-white active">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-way"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-inverse">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-shopbag"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-gothic chk-inverse">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-tools"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-terracotta chk-inverse">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-radio"></i></h1>
+          </div>
+        </div>
+        <div class="chk-container chk-white chk-inverse">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h1><i class="pe-7s-way"></i></h1>
+          </div>
+        </div>
+      </div>
+      <div class="chk-container">
+        <div class="chk-container">
+          <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h3 class="color-white conference-title pt4 mb0">Checker</h3>
+            <h5 class="color-white conference-title">ipsum</h5>
+          </div>
+        </div>
+        <div class="chk-container chk-gothic active">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h3 class="color-white conference-title pt4 mb0">Checker</h3>
+            <h5 class="color-white conference-title">ipsum</h5>
+          </div>
+        </div>
+        <div class="chk-container chk-terracotta">
+          <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="chk-full"></div>
+          <div class="chk-item text-center">
+            <h3 class="color-white conference-title pt4 mb0">Checker</h3>
+            <h5 class="color-white conference-title">ipsum</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <pre class="language-markup"><code>&lt;!-- First Row --&gt;
+&lt;div class=&quot;chk-container chk-casper active&quot;&gt;
+   &lt;div class=&quot;chk-item&quot;&gt;
+    &lt;img src=&quot;img.jpg&quot; class=&quot;chk-full&quot;&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;chk-item&quot;&gt;
+     &lt;h2 class=&quot;conference-title&quot;&gt;This is an Active checker&lt;/h2&gt;
+      &lt;p&gt; Lorem ipsum dolor sit amet..&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt; &lt;!-- /chk-container --&gt;&NewLine;
+&lt;!-- Second Row --&gt;
+&lt;div class=&quot;chk-container&quot;&gt;
+  &lt;div class=&quot;chk-container chk-casper chk-inverse&quot;&gt;
+    &lt;div class=&quot;chk-item&quot;&gt;
+       &lt;img src=&quot;img.jpg&quot; class=&quot;chk-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chk-item&quot;&gt;
+      &lt;h3 class=&quot;conference-title&quot;&gt;Checker&lt;/h3&gt;
+      &lt;p&gt;with class &lt;code&gt;chk-inverse&lt;/code&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt; &lt;!-- /chk-container --&gt;
+  &lt;div class=&quot;chk-container chk-serenade&quot;&gt;
+    &lt;div class=&quot;chk-item&quot;&gt;
+      &lt;img src=&quot;img.jpg&quot; class=&quot;chk-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;chk-item&quot;&gt;
+      &lt;h3 class=&quot;conference-title&quot;&gt;Checker&lt;/h3&gt;
+      &lt;p&gt;with class &lt;code&gt;chk-serenade&lt;/code&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt; &lt;!-- /chk-container --&gt;
+&lt;/div&gt; &lt;!-- /chk-container --&gt;</code></pre>
+            <p class="mt3">To limit the width of the Checker container you can use <code>max-width-x</code> from 1200px to 1800px for X with 200px increment such as <code>max-width-1600</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Timeline</h1>
+            <p> The Timeline is an unordered list <code>ul</code> that lets you show content with a timeline style layout.</p>
+            <p> Adding the class <code>timeline-featured</code> to a list item will highlight the content and lets you add extra details.</p>
+            <ul class="timeline">
+              <li><span class="timeline-time"> <small class="fz-12">Release</small> v. 0.0.2</span>
+                <div class="timeline-content">
+                  <h4>First Commit</h4>
+                </div>
+              </li>
+              <li><span class="timeline-time"> <small class="fz-12">Update</small> v. 0.7.6</span>
+                <div class="timeline-content">
+                  <h4>Some important changes</h4>
+                </div>
+              </li>
+              <li class="timeline-featured"><span class="timeline-time"> <small class="fz-12">Official Release</small> v. 1.0.0</span>
+                <div class="timeline-content">
+                  <h4><i class="pe-7s-id pe-va"></i>Release announcement</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+              </li>
+              <li><span class="timeline-time"> <small class="fz-12">Update</small> v. 1.2.4</span>
+                <div class="timeline-content">
+                  <h4>Fixed little bugs</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;ul class=&quot;timeline&quot;&gt;
+  &lt;li&gt;
+   &lt;span class=&quot;timeline-time&quot;&gt; Release v. 0.0.2 &lt;/span&gt;
+   &lt;div class=&quot;timeline-content&quot;&gt;
+      &lt;h4&gt;First Commit&lt;/h4&gt;
+   &lt;/div&gt;
+  &lt;li class=&quot;timeline-featured&quot;&gt;
+   &lt;span class=&quot;timeline-time&quot;&gt; Official Release v. 1.0.0&lt;/span&gt;
+   &lt;div class=&quot;timeline-content&quot;&gt;
+     &lt;h4&gt;&lt;i class=&quot;pe-7s-id pe-va&quot;&gt;&lt;/i&gt;Release announcement&lt;/h4&gt;
+     &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="forms" class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Forms</h1>
+            <form>
+              <div class="form-group">
+                <div class="input-group conference-input">
+                  <label for="input-name" class="input-group-addon">Input</label>
+                  <input id="input-name" type="text" placeholder="Please type something..." class="form-control">
+                </div>
+              </div>
+            </form>
+            <form>
+              <div class="form-group conference-input">
+                <input id="input-name" type="text" placeholder="Please type something..." class="form-control">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;div class=&quot;form-group&quot;&gt;
+   &lt;div class=&quot;input-group conference-input&quot;&gt;
+     &lt;label for=&quot;input-name&quot; class=&quot;input-group-addon&quot;&gt;Input&lt;/label&gt;
+     &lt;input id=&quot;input-name&quot; type=&quot;text&quot; placeholder=&quot;Please type something...&quot; class=&quot;form-control&quot;&gt;
+   &lt;/div&gt;
+&lt;/div&gt;&NewLine;
+&lt;div class=&quot;form-group conference-input&quot;&gt;
+  &lt;input id=&quot;input-name&quot; type=&quot;text&quot; placeholder=&quot;Please type something...&quot; class=&quot;form-control&quot;&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="helpers" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Helpers</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-uppercase">Font size &amp; Line height</h4>
+            <p class="fz-14">You can easily change the <code class="fz-12">font-size</code> and the <code class="fz-12">line-height</code> with our specific multiplicator classes that will multiply the element inherited font-size/line-height. Those classes use <code class="fz-12">em</code> as a multiplier class. For example: adding <code class="fz-12">em-1-5</code> to an element with a parent <code class="fz-12">font-size:10px</code> will result in a 15px font size (10px * 1.5em = 15px).</p>
+            <hr>
+            <p class="mb0 fz-14">Below the classes for <code class="fz-12">font-size</code></p>
+            <p class="fz-12"> <code>em-0-25</code> - <code>em-0-5</code> - <code>em-0-75</code> - <code>em-1-25</code> - <code>em-1-5</code> - <code>em-1-75</code> - <code>em-2</code> - <code>em-2-5</code> - <code>em-3</code> - <code>em-3-5</code> - <code>em-4</code></p>
+            <p class="mb0 fz-14">Below the classes for <code class="fz-12">line-height</code></p>
+            <p class="fz-12"><code>lh-0-25</code> - <code>lh-0-5</code> - <code>lh-0-75</code> - <code>lh-1-25</code> - <code>lh-1-5</code> - <code>lh-1-75</code> - <code>lh-2</code> - <code>lh-2-5</code> - <code>lh-3</code> - <code>lh-3-5</code> - <code>lh-4</code></p>
+            <hr>
+            <p class="fz-14">Here is an example <code class="fz-12">&lt;p class=&quot;em-1-75&quot;&gt;Lorem ipsum (18px * 1.75em = 31.5px)&lt;/p&gt;</code></p>
+            <p class="em-1-75">Lorem ipsum (18px * 1.75em = 31.5px)</p>
+            <p class="fz-14">Here is another example <code class="fz-12">&lt;p class=&quot;lh-0-75&quot;&gt;Lorem ipsum... (18px * 0.75em = 13.5px)&lt;/p&gt;</code></p>
+            <p class="lh-0-75"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse saepe, debitis repellat maxime porro autem suscipit veniam mollitia neque, tempore laboriosam vel dicta. Sint, aperiam. (18px * 0.75em = 13.5px)</p>
+            <hr>
+            <p class="fz-14">You can also use some more specific font size helpers like for instance the class <code class="fz-12">fz-18</code> wich equals to <code class="fz-12">font-size:18px</code> . As default we included a list of <code class="fz-12">fz-*</code> classes <span class="text-medium">from 10 to 20 in incremental steps of 1px</span>. This way you can mix a <code class="fz-12">fz-*</code> class and a <code class="fz-12">em-*</code> class to set almost any font-size/line-height for any specific element. If needed you can change the mixins in our <code class="fz-12">_modules.scss</code> file.</p>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase">RHYTHM SPACING</h4>
+            <p class="fz-14">We have created a list of spacing class helpers to override any element general spacing while maintaining the rythm. For instance you can use those classes: <code class="fz-12">mb1</code>,  <code class="fz-12">mb2</code>,  <code class="fz-12">mb3</code>,  <code class="fz-12">mb4</code>,  <code class="fz-12">mb5</code> to add a margin-bottom to an element.</p>
+            <p class="fz-14">To respect the spacing rythm those helper classes are based on the<code class="fz-12">html { font-size: ... }</code> value. For example, the classes that ends with: <br><span class="text-medium">1 </span> are <code class="fz-12">0.5rem</code> relative to the element html font-size <br><span class="text-medium">2 </span> are <code class="fz-12">1rem</code> relative to the element html font-size <br><span class="text-medium">3 </span> are <code class="fz-12">2rem</code> relative to the element html font-size <br><span class="text-medium">4 </span> are <code class="fz-12">4rem</code> relative to the element html font-size <br><span class="text-medium">5 </span> are <code class="fz-12">8rem</code> relative to the element html font-size <br>
+              <p class="fz-14">There is a sass <code class="fz-12">@mixin</code> to generate this relation which you can find in the <code class="fz-12">_modules.scss</code> file.</p>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-uppercase">SPECIFIC SPACING IN PIXELS</h4>
+            <p-fz-14>We also have a list of spacing helpers that allow you to control the spacing with pixel. For example, the class <code class="fz-12">mb-15</code> adds a <code class="fz-12">margin-bottom: 15px</code> to the elememt. (Note that <code class="fz-12">mt-*</code> is px based and <code class="fz-12">mt*</code> is rem based)</p-fz-14>
+            <p class="fz-14">As a default there are classes to control margin and padding from 5px to 25px in incremental steps of 5px. For example: <code class="fz-12">mt-5</code>, <code class="fz-12">mt-10</code>, <code class="fz-12">mt-15</code>, <code class="fz-12">mt-20</code>, <code class="fz-12">mt-25</code>. </p>
+            <p class="fz-14">As usual you can edit and expand those classes with our <code class="fz-12">@mixin</code> in the <code class="fz-12">_modules.scss</code> file.</p>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase">Spacing <small>y margins</small></h4>
+            <div class="row">
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt5 mb5"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt4 mb4"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt3 mb3"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt2 mb2"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt1 mb1"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt0 mb0"><i class="pe-7s-crop"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-7s-crop"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt3">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn mt5 mb5&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt4 mb4&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt3 mb3&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt2 mb2&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt1 mb1&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt0 mb0&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase">Spacing <small>negative margins</small></h4>
+            <button class="btn btn-xs btn-block p2 mxn1"><span class="text-normalcase">.mxn1</span></button>
+            <button class="btn btn-xs btn-block p2 mxn2"><span class="text-normalcase">.mxn2</span></button>
+            <button class="btn btn-xs btn-block p2 mxn3"><span class="text-normalcase">.mxn3</span></button>
+            <button class="btn btn-xs btn-block p2 mxn4"><span class="text-normalcase">.mxn4</span></button>
+            <button class="btn btn-xs btn-block p2 mxn5"><span class="text-normalcase">.mxn5</span></button>
+          </div>
+          <div class="col-md-6 mt3">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn mxn1&quot;&gt;mxn1&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn2&quot;&gt;mxn2&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn3&quot;&gt;mxn3&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn4&quot;&gt;mxn4&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn5&quot;&gt;mxn5&lt;/button&gt;<code>&#13;&#13;</code></code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase">Spacing <small>x margins</small></h4>
+            <div class="text-center">
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button>
+              <button class="btn btn-xs mb2 ml5 mr5"> <span class="text-normalcase">ml5 mr5</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button>
+              <button class="btn btn-xs mb2 ml4 mr4"> <span class="text-normalcase">ml4 mr4</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button>
+              <button class="btn btn-xs mb2 ml3 mr3"> <span class="text-normalcase">ml3 mr3</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button>
+              <button class="btn btn-xs mb2 ml2 mr2"> <span class="text-normalcase">ml2 mr2</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button>
+              <button class="btn btn-xs mb2 ml1 mr1"> <span class="text-normalcase">ml1 mr1</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase">m0</span></button><br>
+              <button class="btn btn-xs mb2 mx-auto"><span class="text-normalcase">mx-auto</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml5 mr5&quot;&gt;ml5 mr5&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml4 mr4&quot;&gt;ml4 mr4&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml3 mr3&quot;&gt;ml3 mr3&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml2 mr2&quot;&gt;ml2 mr2&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml1 mr1&quot;&gt;ml1 mr1&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn mx-auto&quot;&gt;mx-auto&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase">Spacing <small>paddings</small></h4>
+            <div class="text-center">
+              <button class="btn p1 mb1"> <span class="text-normalcase text-thin">p1</span></button>
+              <button class="btn p2 mb1"> <span class="text-normalcase text-thin">p2</span></button>
+              <button class="btn p3 mb1"> <span class="text-normalcase text-thin">p3</span></button>
+              <button class="btn p4 mb1"> <span class="text-normalcase text-thin">p4</span></button>
+              <button class="btn p5 mb1"> <span class="text-normalcase text-thin">p5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn p1&quot;&gt;p1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p2&quot;&gt;p2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p3&quot;&gt;p3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p4&quot;&gt;p4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p5&quot;&gt;p5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase">Spacing <small>X paddings</small></h4>
+            <div class="text-center">
+              <button class="btn px1 mb1"> <span class="text-normalcase text-thin">px1</span></button>
+              <button class="btn px2 mb1"> <span class="text-normalcase text-thin">px2</span></button>
+              <button class="btn px3 mb1"> <span class="text-normalcase text-thin">px3</span></button>
+              <button class="btn px4 mb1"> <span class="text-normalcase text-thin">px4</span></button>
+              <button class="btn px5 mb1"> <span class="text-normalcase text-thin">px5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn px1&quot;&gt;px1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px2&quot;&gt;px2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px3&quot;&gt;px3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px4&quot;&gt;px4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px5&quot;&gt;px5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase">Spacing <small>Y paddings</small></h4>
+            <div class="text-center">
+              <button class="btn py1 mb1"> <span class="text-normalcase text-thin">py1</span></button>
+              <button class="btn py2 mb1"> <span class="text-normalcase text-thin">py2</span></button>
+              <button class="btn py3 mb1"> <span class="text-normalcase text-thin">py3</span></button>
+              <button class="btn py4 mb1"> <span class="text-normalcase text-thin">py4</span></button>
+              <button class="btn py5 mb1"> <span class="text-normalcase text-thin">py5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn py1&quot;&gt;py1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py2&quot;&gt;py2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py3&quot;&gt;py3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py4&quot;&gt;py4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py5&quot;&gt;py5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="icons" class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Icons</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-uppercase">Stoke 7 Icons<small class="fz-12">/ <a href="http://themes-pixeden.com/font-demos/7-stroke/index.html">Pixeden Icons Website</a></small></h4>
+            <button class="btn btn-sm"><i class="pe-7s-way"></i></button>
+            <button class="btn btn-sm"><i class="pe-7s-bicycle"></i></button>
+            <button class="btn btn-sm"><i class="pe-7s-date"></i></button>
+            <button class="btn btn-sm"><i class="pe-7s-home"></i></button><br>
+            <button class="btn btn-sm btn-terracotta inverse mt1"><i class="pe-7s-plugin mr2"></i>Plugin</button>
+            <button class="btn btn-sm btn-casper inverse mt1"><i class="pe-7s-refresh-2 mr2"></i>Refresh</button>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-sm&quot;&gt;
+   &lt;i class=&quot;pe-7s-way&quot;&gt;&lt;/i&gt;
+&lt;/button&gt; &#13;&#13;
+&lt;button class=&quot;btn btn-sm btn-casper inverse&quot;&gt;
+   &lt;i class=&quot;pe-7s-refresh-2 mr2&quot;&gt;&lt;/i&gt; Refresh
+&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-uppercase">Social Icons <small class="fz-12">/ <a href="http://themes-pixeden.com/font-demos/social/">Pixeden Icons Website</a></small></h4>
+            <button class="btn btn-sm btn-warning inverse"><i class="pe-so-amazon"></i></button>
+            <button class="btn btn-sm btn-gothic inverse"><i class="pe-so-youtube-2"></i></button>
+            <button class="btn btn-sm btn-casper inverse"><i class="pe-so-twitter"></i></button><br>
+            <ul class="pe-social mt2">
+              <li><a href="#0"><i class="pe-so-skype pe-2x pe-color"></i></a></li>
+              <li><a href="#0"><i class="pe-so-sass pe-2x pe-bg pe-bg-cl"></i></a></li>
+              <li> <a href="#0"><i class="pe-so-dropbox pe-hover pe-2x color-white"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-sm btn-warning inverse&quot;&gt;
+   &lt;i class=&quot;pe-so-amazon&quot;&gt;&lt;/i&gt;
+&lt;/button&gt; &#13;&#13;
+&lt;ul class=&quot;pe-social&quot;&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-skype pe-2x pe-color&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-sass pe-2x pe-bg pe-bg-cl&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-dropbox pe-hover pe-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+&lt;/ul&gt; &#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="libs" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase h-black mb4 text-truncate">Dependencies &amp; Libraries</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="mb0"><span class="text-medium">Bootstrap </span><span class="fz-12 text-thin">/ <a href="http://getbootstrap.com/">Official site</a></span></p>
+            <p><code class="fz-12">libs/bootstrap</code></p>
+            <p class="mb0"><span class="text-medium">jQuery </span><span class="fz-12 text-thin">/ <a href="http://jquery.com/">Official site</a></span></p>
+            <p> <code class="fz-12">libs/jquery</code></p>
+          </div>
+          <div class="col-md-9">
+            <h5>Adding your own styles</h5>
+            <p>If you need to override, add or change classes for your project please write them in the <code class="fz-12">custom.css</code> file provided and link it to your project. This will allow you to update to future versions without loosing your changes.</p>
+            <h5 class="mt3"> <span class="text-medium">Scss </span>project</h5>
+            <p>If you use SASS you can find the scss files used to create this template in the folder <code class="fz-12">/sass </code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-light"><a href="#top" class="fz-50"><i class="pe-7s-angle-up-circle"></i></a></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Livereload Script -- remove on production-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+       peNavScroll.init({
+         nav:'.navbar',
+         class:'active',
+         duration: 500,
+         allLinks: true,
+         easingFunction: easing.easeInOutCubic
+       });
+      
+      
+        // Mobile Navigation
+        $('.nav-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.navbar').toggleClass('navbar--open');
+        })
+        
+        // Select code
+        var pres = document.querySelectorAll('pre');
+        [].slice.call(pres).forEach(function(elem, index){
+          pres[index].addEventListener('click', function(){
+            SelectText(this)
+          })
+        })
+      
+      
+      
+      }) // Ready
+      
+      
+      
+      
+          
+    </script>
+  </body>
+</html>

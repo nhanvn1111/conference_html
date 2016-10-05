@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The Conference Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <style>
+      .navbar.nav-bg {
+        background-color: rgba(255,255,255,.76);
+      }
+      
+      @media (min-width: 767px) {
+        .nav-hide {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
+        .nav-show {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      
+    </style>
+    <div id="loading">
+      <svg viewBox="0 0 19 32" class="loader">
+        <path d="M15.947 10.080v-6.347h2.72v-1.067h-18.667v1.067h2.667v6.347c0 1.76 0.693 3.893 5.387 6.187-4 1.92-5.387 3.627-5.387 6.453v5.547h-2.667v1.067h18.667v-1.067h-2.72v-5.547c0-2.827-1.387-4.533-5.387-6.507 4.693-2.24 5.387-4.373 5.387-6.133zM14.88 22.72v5.547h-11.147v-5.547c0-2.24 0.907-3.787 5.6-5.92 4.64 2.187 5.547 3.733 5.547 5.92zM9.28 15.68c-4.907-2.24-5.547-4.107-5.547-5.6v-6.347h11.147v6.347c0 1.493-0.693 3.36-5.6 5.6z"></path>
+      </svg>
+    </div>
+    <header id="home" class="section section-terracotta fixed-nav-start">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container text-center">
+          <ul class="nav nav-pills conference-navigation inline-block">
+            <li role="presentation" class="active"><a href="#home">Home</a></li>
+            <li role="presentation"><a href="#services">Services</a></li>
+            <li role="presentation"><a href="#team">Team</a></li>
+            <li role="presentation"><a href="#testimonial">Testimonial</a></li>
+            <li role="presentation"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button type="button" role="button" aria-label="Toggle Navigation" class="nav-btn"><span class="lines"></span></button>
+      <div class="container text-center color-white pt4">
+        <div id="example-slider" class="pe-slider">
+          <ul class="pe-slides">
+            <li id="s1" class="slide-1">
+              <h1 class="conference-main-title margin-0"><i class="pe-7s-global"></i>The Conference Example</h1>
+              <h2 class="conference-main-subtitle margin-0">This is a great subtitle.</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies condimentum tristique. Sed quis urna velit. Aliquam suscipit dapibus molestie. Nam auctor, risus et varius dapibus, lorem leo dapibus nulla, id tellus purus vitae augue.</p><a href="#0" class="btn btn-white btn-lg mt-30 mb5">Learn more</a>
+            </li>
+            <li id="s2" class="slide-2">
+              <h1 class="conference-main-title margin-0"><i class="pe-7s-tools"></i>Another Conference Page</h1>
+              <h2 class="conference-main-subtitle margin-0">This is a slider.</h2>
+              <hr>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla perspiciatis eligendi ab in accusamus voluptatem asperiores minus excepturi enim neque ipsa fuga, aliquam molestiae impedit minima aliquid esse accusantium voluptates.</p><a href="#0" class="btn btn-white btn-lg mt-30 mb5">Learn more</a>
+            </li>
+          </ul>
+          <ul class="pe-slider-nav">
+            <li><a href="#0" class="pe-slider-prev"></a></li>
+            <li><a href="#0" class="pe-slider-next"></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="services" class="section">
+      <div class="container text-center">
+        <h2 class="conference-main-title">Our Services</h2>
+        <hr>
+        <div class="row margin-top-30">
+          <div class="col-md-4 col-sm-4">
+            <h3 class="conference-title"><i class="pe-7s-drawer"></i>Excepteur adipiscing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. Maecenas porta orci a lorem fermentum.</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <h3 class="conference-title"><i class="pe-7s-global"></i>Consectetur voluptatem</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <h3 class="conference-title"><i class="pe-7s-camera"></i>Maecenas porta orci</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. Maecenas porta orci a lorem fermentum.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="team" class="section conference-speakers">
+      <div class="full-width max-width-1600 text-center">
+        <h2 class="conference-main-title margin-top-0">Our Team</h2>
+        <hr>
+        <div class="chk-container mt4">
+          <div class="chk-container chk-serenade">
+            <div class="chk-item"><img src="assets/img/speaker_2.jpg" alt="Speaker JOAN MARTINEZ" class="checker-full"></div>
+            <div class="chk-item">
+              <div class="checker-content">
+                <h3 class="conference-title">JOAN MARTINEZ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae metus ligula.</p>
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chk-container chk-serenade">
+            <div class="chk-item"><img src="assets/img/speaker_3.jpg" alt="Speaker MICHAEL DOE" class="checker-full"></div>
+            <div class="chk-item">
+              <div class="checker-content">
+                <h3 class="conference-title">MICHAEL DOE</h3>
+                <p>Aenean pharetra adipiscing sem non ornare. Duis at dui turpis. Quisque in accumsan.</p>
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container">
+          <div class="chk-container chk-serenade chk-inverse">
+            <div class="chk-item"><img src="assets/img/speaker_4.jpg" alt="Speaker SAUL GOODMAN" class="checker-full"></div>
+            <div class="chk-item">
+              <div class="checker-content">
+                <h3 class="conference-title">SAUL GOODMAN</h3>
+                <p>Phasellus rutrum est interdum tincidunt commodo. Donec vel dignissim orci.</p>
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chk-container chk-serenade chk-inverse">
+            <div class="chk-item"><img src="assets/img/speaker_5.jpg" alt="Speaker HUGH LAURENCE" class="checker-full img-hover"></div>
+            <div class="chk-item">
+              <div class="checker-content">
+                <h3 class="conference-title">HUGH LAURENCE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris.</p>
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="section">
+      <div class="container text-center">
+        <h2 class="conference-main-title margin-top-0">Testimonials</h2>
+        <hr>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in 
+            <cite title="Source Title">Source Title</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+    <section id="contact" class="section section-serenade">
+      <div class="container">
+        <h2 class="conference-main-title margin-bot-0">Contact us</h2>
+        <h3 class="conference-main-subtitle margin-0">We want to hear from you.</h3>
+        <hr>
+        <form action="" class="contact-form margin-top-40">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group conference-input">
+                  <label for="input-name" class="input-group-addon">Name</label>
+                  <input id="input-name" type="text" placeholder="Enter your name..." class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group conference-input">
+                  <label for="input-email" class="input-group-addon">Email</label>
+                  <input id="input-email" type="email" placeholder="Your email please..." class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-group conference-input">
+                  <label for="input-msg" class="input-group-addon">Message</label>
+                  <input id="input-msg" type="text" placeholder="Something like 'Hello guys...'" class="form-control">
+                </div>
+              </div>
+              <button class="btn btn-lg mt-30 mb-30">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="container text-center">
+        <h2 class="conference-main-title">The Conference</h2>
+        <ul class="pe-social margin-bot-20">
+          <li><a href="#0"><i class="pe-so-youtube-1 pe-bg pe-bg-cl"></i></a></li>
+          <li><a href="#0"><i class="pe-so-facebook pe-bg pe-bg-cl"></i></a></li>
+          <li><a href="#0"><i class="pe-so-twitter pe-bg pe-bg-cl"></i></a></li>
+        </ul>
+        <p class="italic font12">Copyright © 2015 Pixeden. All Rights Reserved.</p>
+      </div>
+      <!-- /.container-->
+    </footer>
+    <!-- /.footer-->
+    
+    
+    
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Livereload Script -- remove on production-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        // Pe Slider
+        var exampleSlider = new peSlider();
+        exampleSlider.init({
+          slider:'#example-slider',
+          pagination: true,
+          navigation: false,
+          touch: true
+        });
+      
+        peNavScroll.init({
+          nav:'.navbar',
+          class:'active',
+          duration: 500,
+          allLinks: true,
+          hideOnScroll: true,
+          noMenu: true,
+          easingFunction: easing.easeInOutCubic
+        });
+      
+        peScrollChange.init({
+          elem: '.navbar',
+          trigger: document.querySelector('.fixed-nav-start').offsetHeight,
+          classesToChange: 'nav-bg'
+        });
+      
+      
+        // Mobile Navigation
+        $('.nav-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.navbar').toggleClass('navbar--open');
+        })
+      
+      
+      }) // Ready
+      
+          
+    </script>
+  </body>
+</html>
